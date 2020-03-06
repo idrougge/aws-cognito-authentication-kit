@@ -20,6 +20,8 @@ jobs:
       uses: actions/checkout@v1
       with:
         fetch-depth: 1
+    - name: Dependencies
+      run: brew list
     - name: Build
       run: swift build
     - name: Test
