@@ -20,8 +20,6 @@ jobs:
       uses: actions/checkout@v1
       with:
         fetch-depth: 1
-    - name: Install dependencies
-      run: brew install openssl
     - name: Build
       run: swift build
     - name: Test
