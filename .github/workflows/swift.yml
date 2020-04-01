@@ -26,7 +26,7 @@ jobs:
   linux:
     strategy:
       matrix:
-        image: ["vapor/swift:5.2-xenial", "vapor/swift:5.2-bionic"]
+        image: ["swift:5.2.1"]
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.image }}
